@@ -1,0 +1,37 @@
+# Core dependencies for D2L book
+# Install with: pip install -r requirements.txt
+
+# Core scientific computing
+jupyter==1.0.0
+numpy==1.23.5
+matplotlib==3.7.2
+matplotlib-inline==0.1.6
+requests==2.31.0
+pandas==2.0.3
+scipy==1.10.1
+
+# For viewing markdown files in Jupyter
+mu-notedown
+
+# For building the book
+d2lbook
+# Code formatting (required by d2lbook)
+autopep8
+
+# Deep learning framework - choose one:
+# PyTorch (most common, uncomment to install):
+# torch
+# torchvision
+
+# TensorFlow (uncomment to install):
+# tensorflow
+# tensorflow-probability
+
+# MXNet (uncomment to install):
+# mxnet
+
+# JAX (uncomment to install):
+# jax
+# jaxlib
+# flax
+

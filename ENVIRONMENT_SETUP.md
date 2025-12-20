@@ -7,7 +7,7 @@ This guide shows you how to create a Python environment that can **both build th
 ### Step 1: Create the Environment
 
 ```bash
-cd /Users/karlzhang/Library/CloudStorage/OneDrive-Personal/Other/Live_Courses/BitTiger/Alg_Practice/Ind_Proj/d2l-en
+cd <dir>/d2l-en
 conda env create -f environment.yml
 ```
 
@@ -174,7 +174,7 @@ Once set up, your daily workflow is:
 
 2. **Navigate to the book directory:**
    ```bash
-   cd /Users/karlzhang/Library/CloudStorage/OneDrive-Personal/Other/Live_Courses/BitTiger/Alg_Practice/Ind_Proj/d2l-en
+   cd <dir>/d2l-en
    ```
 
 3. **Start Jupyter:**
@@ -261,7 +261,7 @@ pip install --upgrade torch torchvision  # Update your deep learning framework
 **Update the d2l library (if you've modified the source):**
 ```bash
 conda activate d2l
-cd /Users/karlzhang/Library/CloudStorage/OneDrive-Personal/Other/Live_Courses/BitTiger/Alg_Practice/Ind_Proj/d2l-en
+cd <dir>/d2l-en
 pip install -e . --upgrade
 ```
 

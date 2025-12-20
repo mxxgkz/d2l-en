@@ -14,7 +14,6 @@ dependencies:
   - ipykernel
   - pip
   - pip:
-    - d2l==1.0.3
     # Core dependencies from setup.py
     - jupyter==1.0.0
     - matplotlib-inline==0.1.6
@@ -25,6 +24,8 @@ dependencies:
     - d2lbook
     # Code formatting (required by d2lbook)
     - autopep8
+    # Fix compatibility: nbconvert 7.x requires mistune 3.x
+    - mistune>=3.0.0
 
 # Installation Notes:
 # To avoid memory issues (std::bad_alloc) when installing all packages at once,
@@ -36,6 +37,10 @@ dependencies:
 # Step 2: Activate the environment and install PyTorch separately:
 #   conda activate d2l
 #   pip install torch==2.0.0 torchvision==0.15.1
+#
+# Step 3: Fix dependency compatibility issues (if encountered):
+#   pip install "pybtex==0.24.0"  # Required for sphinxcontrib-bibtex 2.4.2
+#   conda install -c conda-forge pandoc  # Required for RST conversion
 #
 # Alternative: If mamba still fails, use conda instead:
 #   conda env create -f environment-base.yml

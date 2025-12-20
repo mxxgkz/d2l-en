@@ -29,7 +29,7 @@ pip install --upgrade torch torchvision  # or tensorflow, mxnet, jax, etc.
 
 ```bash
 conda activate d2l
-cd /Users/karlzhang/Library/CloudStorage/OneDrive-Personal/Other/Live_Courses/BitTiger/Alg_Practice/Ind_Proj/d2l-en
+cd <dir>/d2l-en
 conda env update -f environment.yml --prune
 ```
 
@@ -110,7 +110,7 @@ pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1
 
 ```bash
 conda activate d2l
-cd /Users/karlzhang/Library/CloudStorage/OneDrive-Personal/Other/Live_Courses/BitTiger/Alg_Practice/Ind_Proj/d2l-en
+cd <dir>/d2l-en
 pip install -e . --upgrade
 ```
 

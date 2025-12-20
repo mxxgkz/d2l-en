@@ -12,7 +12,7 @@ This creates a complete environment that can both build the book and execute all
 
 1. **Create the environment:**
    ```bash
-   cd /Users/karlzhang/Library/CloudStorage/OneDrive-Personal/Other/Live_Courses/BitTiger/Alg_Practice/Ind_Proj/d2l-en
+   cd <dir>/d2l-en
    conda env create -f environment.yml
    ```
 
@@ -108,7 +108,7 @@ This allows you to view and run the markdown files as interactive notebooks.
 
 3. **Start Jupyter Notebook:**
    ```bash
-   cd /Users/karlzhang/Library/CloudStorage/OneDrive-Personal/Other/Live_Courses/BitTiger/Alg_Practice/Ind_Proj/d2l-en
+   cd <dir>/d2l-en
    jupyter notebook
    ```
 
@@ -146,7 +146,7 @@ This builds a full HTML website version of the book (like the online version).
 
 3. **Build the HTML version:**
    ```bash
-   cd /Users/karlzhang/Library/CloudStorage/OneDrive-Personal/Other/Live_Courses/BitTiger/Alg_Practice/Ind_Proj/d2l-en
+   cd <dir>/d2l-en
    d2lbook build html
    ```
    
@@ -250,4 +250,3 @@ Then open `http://localhost:8888` in your browser. When creating a new notebook,
       - `conda activate d2l`
       - `python -m pip uninstall -y jupyterlab jupyterlab-server jupyterlab-pygments jupyterlab-widgets notebook notebook-shim`
       - `conda install -c conda-forge -y jupyterlab notebook jupyterlab_server jupyterlab_widgets -v`
-      

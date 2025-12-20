@@ -16,7 +16,6 @@ dependencies:
   - ipykernel
   - pip
   - pip:
-    - d2l==1.0.3
     # Core dependencies from setup.py
     - jupyter==1.0.0
     - matplotlib-inline==0.1.6

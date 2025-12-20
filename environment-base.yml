@@ -4,9 +4,7 @@ channels:
   - defaults
 dependencies:
   # Use Python 3.9 for best compatibility with the book's dependencies
-  # If you need Python 3.12, uncomment the line below and comment out python=3.9
   - python=3.9
-  # - python=3.12  # Uncomment this if you prefer Python 3.12
   # Install scientific packages via conda (has pre-built binaries)
   - numpy=1.23.5
   - matplotlib=3.7.2
@@ -27,16 +25,18 @@ dependencies:
     - d2lbook
     # Code formatting (required by d2lbook)
     - autopep8
-    # Deep learning framework (choose one or install separately)
-    # Uncomment the framework you want to use:
-    - torch==2.0.0
-    - torchvision==0.15.1
-    # - tensorflow
-    # - mxnet
-    # - jax
-    # - jaxlib
-    # - flax  # if using JAX
 
-# Note: The d2l library should be installed from source after creating the environment:
-# pip install -e .
+# Installation Notes:
+# To avoid memory issues (std::bad_alloc) when installing all packages at once,
+# use a staged installation approach:
+#
+# Step 1: Install basic libraries first:
+#   mamba env create -f environment-base.yml -vvv
+#
+# Step 2: Activate the environment and install PyTorch separately:
+#   conda activate d2l
+#   pip install torch==2.0.0 torchvision==0.15.1
+#
+# Alternative: If mamba still fails, use conda instead:
+#   conda env create -f environment-base.yml
 

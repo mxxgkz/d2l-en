@@ -243,3 +243,11 @@ Then open `http://localhost:8888` in your browser. When creating a new notebook,
   pip list --outdated  # Check outdated pip packages
   ```
 
+**Installation failure**
+- Use `environment-base.yml` to install basic libaries first. Can use `mamba`.
+- Then install `torch` and `torchvision` separately.
+- Install several packages from conda-forge to avoid `_control_lock` error.
+      - `conda activate d2l`
+      - `python -m pip uninstall -y jupyterlab jupyterlab-server jupyterlab-pygments jupyterlab-widgets notebook notebook-shim`
+      - `conda install -c conda-forge -y jupyterlab notebook jupyterlab_server jupyterlab_widgets -v`
+      

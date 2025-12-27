@@ -154,6 +154,7 @@ The environment includes:
 - `d2lbook` - Builds HTML, PDF, and other formats
 - `mu-notedown` - Allows Jupyter to read markdown files
 - `autopep8` - Code formatting (required by d2lbook)
+- `pandoc` - Document converter (required for building HTML/PDF) - **Must be installed separately**
 
 ✅ **Deep Learning Framework:**
 - You choose: PyTorch, TensorFlow, MXNet, or JAX
